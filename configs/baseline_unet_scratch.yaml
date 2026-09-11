@@ -1,0 +1,15 @@
+# Baseline Phase 2 — U-Net léger from scratch, entrée Ash RGB, frame cible uniquement.
+name: baseline_unet_scratch
+model: unet_scratch
+in_channels: 3
+
+seed: 42
+epochs: 60
+batch_size: 2
+lr: 0.001
+dice_weight: 0.5
+threshold: 0.5
+
+data_dir: Data/Raw/opencontrails_mini_sample
+checkpoint_dir: checkpoints
+reports_dir: reports
